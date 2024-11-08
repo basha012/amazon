@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Amazon Login/Sign Up</title>
+    <style> 
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #254057;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: #f90;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #e88e00;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-btn {
+    background-color: #232f3e;
+}
+
+.signup-btn:hover {
+    background-color: #1a222c;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon Login</h1>
+        <form>
+            <div class="input-group">
+                <label for="email">Email or mobile phone number</label>
+                <input type="text" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p class="signup-text">New to Amazon?</p>
+        <button class="btn signup-btn">Create an account</button>
+    </div>
+</body>
+</html>
